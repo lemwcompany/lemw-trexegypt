@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل T-REX RR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #ffffff;
+            color: #000;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header img {
+            width: 80px; /* حجم اللوجو */
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: #e10600;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .text-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .text-image img {
+            max-width: 60%; /* تصغير حجم الصورة أكثر */
+            border-radius: 8px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+
+        .text-image img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .text-image .text {
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333;
+            max-width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ccc;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تحسين التوافق مع الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .text-image img {
+                max-width: 60%; /* تصغير حجم الصورة في الشاشات الصغيرة */
+            }
+
+            .text-image .text {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .text-image img {
+                max-width: 100%;
+            }
+
+            .text-image .text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.jpeg" alt="Logo"> <!-- تأكد من تعديل مسار اللوجو -->
+        <div class="nav">
+            <a href="home.html">الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="contact.html">اتصل بنا</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>تفاصيل T-REX RR</h1>
+
+        <!-- القسم الأول: التصميم والأداء -->
+        <div class="section">
+            <h2>التصميم والأداء</h2>
+            <div class="text-image">
+                <img src="RR.png" alt="صورة T-REX RR">
+                <div class="text">
+                    <p>
+                        سيارة T-REX RR تمثل قمة الأداء الرياضي مع تصميمها الفريد والمبتكر.
+                        تأتي السيارة مزودة بمحرك قوي بسعة 1441cc يولد قوة 208 حصان، مما يجعلها مثالية لعشاق السرعة، حيث يمكنها الانطلاق من 0 إلى 100 كيلومتر في 3.9 ثوانٍ فقط.
+                        يبلغ وزن السيارة الإجمالي حوالي 598 كيلوغرام، مما يوفر توازنًا مثاليًا بين الخفة والثبات.
+                        تتميز السيارة بنظام نقل حركة نصف كهربائي مكون من 6 سرعات، مما يعزز من أدائها الديناميكي ويتيح للسائق تحكمًا أفضل.
+                        يمكن للسيارة تحقيق سرعة قصوى تصل إلى 250 كيلومتر في الساعة، ما يجعلها الخيار المثالي لمحبي السرعة والتشويق.
+                        الهيكل الفولاذي القوي للسيارة يوفر مستوى عالٍ من الأمان للسائقين، حتى في أصعب الظروف.
+                        T-REX RR ليست مجرد سيارة، بل هي تجربة قيادة مختلفة كليًا.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم الثاني: المكونات الفاخرة -->
+        <div class="section">
+            <h2>المكونات الفاخرة</h2>
+            <div class="text-image">
+                <img src="R.jpg" alt="مكونات السيارة الفاخرة">
+                <div class="text">
+                    <p>
+                        تعتمد T-REX RR على مكونات فائقة الجودة، بما في ذلك العجلات الرياضية خفيفة الوزن ونظام تعليق قابل للتعديل.
+                        تساعد هذه المكونات في تقديم تجربة قيادة سلسة وسريعة الاستجابة.
+                        بالإضافة إلى ذلك، يتمتع نظام العادم الرياضي بصوت قوي ومميز، مما يعزز الإحساس بالقوة عند القيادة.
+                        التفاصيل الداخلية أيضًا لا تقل أهمية، حيث تأتي المقصورة بأفخم المواد التي تمنحك الراحة والأناقة في الوقت ذاته.
+                        كل هذه المزايا تجعل من T-REX RR خيارًا مثاليًا لمحبي السيارات الفاخرة.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم الثالث: السلامة والأمان -->
+        <div class="section">
+            <h2>السلامة والأمان</h2>
+            <div class="text-image">
+                <img src="ABS.png" alt="ميزات الأمان">
+                <div class="text">
+                    <p>
+                        السلامة هي الأولوية القصوى في تصميم T-REX RR.
+                        تأتي السيارة مجهزة بنظام فرامل ABS المتطور الذي يوفر تحكمًا ممتازًا أثناء الطوارئ. كما يعزز الهيكل الفولاذي المتين من مستوى الحماية في حالات التصادم.
+                        علاوة على ذلك، تم تجهيز السيارة بأنظمة أمان متعددة، مثل أحزمة الأمان القياسية ثلاثية النقاط، بالإضافة إلى حزام سباق اختياري رباعي النقاط.
+                        تعتبر السيارة قانونية على الطرق السريعة في أمريكا الشمالية، مما يضيف إلى قيمتها العملية والأمان على الطريق.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2025 L E MW. All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>

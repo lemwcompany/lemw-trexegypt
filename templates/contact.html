@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - L E MW</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: url('smsm.jpg') no-repeat center center fixed; /* خلفية الصورة */
+            background-size: cover; /* تغطية الشاشة بالكامل */
+            color: #fff; /* نص أبيض */
+        }
+
+        .navbar {
+            background-color: #000; /* شريط تنقل أسود */
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 80px); /* توفير مساحة لشريط التنقل */
+            padding: 20px;
+        }
+
+        .contact-box {
+            background-color: rgba(0, 0, 0, 0.7); /* صندوق شفاف بخلفية سوداء */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            border: 2px solid #fff; /* إطار أبيض */
+        }
+
+        .contact-box h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff; /* عنوان أبيض */
+        }
+
+        .contact-box input, .contact-box textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* خلفية مدخلات داكنة وشفافة */
+            border: 1px solid #ccc; /* حد رمادي */
+            color: #fff; /* نص أبيض في المدخلات */
+            border-radius: 5px;
+        }
+
+        .contact-box input:focus, .contact-box textarea:focus {
+            outline: none;
+            border-color: #fff; /* حد أبيض عند التركيز */
+        }
+
+        .btn-submit {
+            background-color: #000; /* زر أسود */
+            color: #fff; /* نص أبيض */
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #444; /* زر أسود داكن عند التمرير */
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366; /* زر واتساب أخضر */
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe5b; /* زر واتساب داكن عند التمرير */
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #fff; /* نص أبيض للمعلومات */
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333; /* خلفية داكنة للتذييل */
+            padding: 10px 0;
+            text-align: center;
+            color: #fff; /* نص أبيض */
+        }
+
+        /* ضبط التنسيق على مختلف الأجهزة */
+        @media (max-width: 768px) {
+            .contact-box {
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .contact-box h2 {
+                font-size: 2rem;
+            }
+
+            .btn-submit, .btn-whatsapp {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpeg" alt="Company Logo" class="logo" style="border-radius: 50%; width: 60px; height: 60px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/lemwcompany@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br><br>
+                <input type="email" name="email" placeholder="Your Email" required><br><br>
+                <input type="tel" name="phone" placeholder="Your Phone" required><br><br>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p>Email: <a href="mailto:lemwcompany@gmail.com" style="color:#fff; text-decoration:underline;">lemwcompany@gmail.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/201507032384" style="color:#fff; text-decoration:underline;">+201507032384</a></p>
+            </div>
+
+            <a href="https://wa.me/201507032384" class="btn-whatsapp">Contact Us on WhatsApp</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 L E MW. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

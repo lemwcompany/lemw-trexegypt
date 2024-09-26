@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('C:\Users\Adm1n\OneDrive\سطح المكتب\LEMW_TREX_Project\static\images/Company_logo.jpeg'); /* خلفية الصفحة */
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.749);
+}
+
+.header {
+    background-color: rgba(51, 51, 51, 0.8); /* خلفية داكنة لشريط التنقل */
+}
+
+.logo {
+    width: 50px; /* عرض الشعار */
+    height: 50px; /* ارتفاع الشعار */
+    border-radius: 50%; /* لجعل الشعار دائري */
+}
+
+.hero {
+    height: 100vh; /* اجعلها تأخذ طول الصفحة بالكامل */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية داكنة للنص */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* لجعل المحتوى فوق الخلفية */
+    z-index: 1; /* اجعل النص فوق الخلفية */
+}
+
+.footer {
+    background-color: rgba(51, 51, 51, 0.8); /* خلفية داكنة لتذييل الصفحة */
+    color: white;
+    padding: 10px 0;
+}

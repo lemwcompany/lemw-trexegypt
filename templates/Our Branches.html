@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L E MW - Branches & Maintenance Centers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            color: #ffffff;
+            background: url('egypt.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        section {
+            padding: 50px 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 900px;
+        }
+
+        h1, h2 {
+            color: #ff6f61;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #ffffff; 
+        }
+
+        .location-btn {
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
+            border: 2px solid #ffffff; /* إطار أبيض */
+            color: #ffffff; 
+            padding: 8px 12px;  /* جعل الأزرار أصغر */
+            border-radius: 6px;  /* حواف ناعمة */
+            font-size: 0.9rem;  
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .location-btn:hover {
+            background-color: rgba(0, 0, 0, 0.7); 
+            border-color: #ff6f61; /* تغيير اللون عند التمرير */
+            transform: scale(1.05); 
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 15px;
+            }
+
+            h1, h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .location-btn {
+                font-size: 0.8rem; /* تصغير حجم النص في الهواتف */
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpeg" alt="Company Logo" style="border-radius: 50%; width: 60px; height: 60px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="head-office">
+        <div class="container">
+            <h1>Head Office</h1>
+            <p>Location: Al Qadisia, Block 2, New Obour City.</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/your-link" target="_blank">Open on Google Maps</a>
+        </div>
+    </section>
+
+    <!-- Maintenance Centers Section -->
+    <section id="maintenance">
+        <div class="container">
+            <h2>Maintenance Centers</h2>
+            <h3>1. New Obour City - Al Qadisia, Block 2</h3>
+            <a class="location-btn" href="https://maps.app.goo.gl/your-link" target="_blank">Open on Google Maps</a>
+
+            <h3>2. Giza - Al Omrania</h3>
+            <p>Location: Dr. Kinisa St., near St. Mary Paul's Church.</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/6GHfmSiM43UqwCvV9" target="_blank">Open on Google Maps</a>
+        </div>
+    </section>
+
+    <!-- Office Branches Section -->
+    <section id="branches">
+        <div class="container">
+            <h2>Reception Offices</h2>
+            <h3>1. Fifth Settlement Branch</h3>
+            <p>Address: 53 Capital Mall, Behind the Court</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/WYt2qWkEMj11cSf36" target="_blank">Open on Google Maps</a>
+
+            <h3>2. Nasr City Branch</h3>
+            <p>Address: 3 Makram Ebeid St.</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/xBDedEabwwRo35uPA" target="_blank">Open on Google Maps</a>
+
+            <h3>3. Maadi Branch</h3>
+            <p>Address: 9 Division of Wireless</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/sCCgve2Qd2JzUQmWA" target="_blank">Open on Google Maps</a>
+
+            <h3>4. Sheraton Branch</h3>
+            <p>Address: 42 Ankara St., Main Sea St.</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/vNVjoxMYQ6q4sE1G9" target="_blank">Open on Google Maps</a>
+
+            <h3>5. Mohandeseen Branch</h3>
+            <p>Address: 105 Sudan St., Main Sudan St. and University St. intersection</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/n2LNUpWnb35P6c5r6" target="_blank">Open on Google Maps</a>
+
+            <h3>6. 6th of October Branch</h3>
+            <p>Address: 9 Jasmine St., Fourth District</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/UpcSLvATGdw7Q6qV7" target="_blank">Open on Google Maps</a>
+
+            <h3>7. Alexandria Branch</h3>
+            <p>Address: Mustafa Kamel Station, Main Abu Qir St.</p>
+            <a class="location-btn" href="https://maps.app.goo.gl/vNVjoxMYQ6q4sE1G9" target="_blank">Open on Google Maps</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 L E MW. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

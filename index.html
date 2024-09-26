@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L E MW - Opening</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video id="video" autoplay muted>
+        <source src="templates/hi.mp4" type="video/mp4"> <!-- رابط الفيديو -->
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // الانتقال إلى الصفحة الرئيسية بعد 4 ثوانٍ من عرض الفيديو
+        setTimeout(function () {
+            window.location.href = 'templates/home.html'; // رابط الصفحة الرئيسية
+        }, 4000); // 4 ثوانٍ
+    </script>
+
+</body>
+
+</html>
